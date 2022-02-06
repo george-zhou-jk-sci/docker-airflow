@@ -28,7 +28,7 @@ RUN apt-get update -yqq \
   && rm -rf /var/lib/apt/lists/*
 USER airflow
 
-RUN pip install --user -r ${AIRFLOW_HOME}/requirements.txt
+RUN pip install --user -r ${AIRFLOW_HOME}/requirements.txt \
     &&  pip install --user apache-airflow[crypto,postgres,aws,kubenetes]==2.2.3 \
     --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.2.3/constraints-3.8.txt"
     
