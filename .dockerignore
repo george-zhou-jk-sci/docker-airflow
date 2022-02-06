@@ -1,0 +1,8 @@
+passphrase.txt
+logs/
+.git
+*.md
+.cache
+__pycache__
+venv
+.idea

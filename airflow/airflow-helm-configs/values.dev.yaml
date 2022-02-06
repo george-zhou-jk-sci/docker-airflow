@@ -1,0 +1,6 @@
+db:
+    username:
+    password:
+    host: airflow-dev.c2esraccmwot.us-east-1.rds.amazonaws.com
+    port: "5432"
+    databaseName: airflow
